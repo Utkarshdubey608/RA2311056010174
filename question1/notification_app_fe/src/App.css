@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* New styles for notification UI */
+.panel {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.count {
+  color: #555;
+}
+
+.notif-card {
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.notif-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.message {
+  font-weight: 600;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 32px 12px;
+  color: #666;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .panel {
+    margin: 12px 8px 20px 8px;
+  }
+  .notif-card {
+    margin: 0;
+  }
+  .pagination {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .App-header {
+    padding: 8px;
+  }
+}
